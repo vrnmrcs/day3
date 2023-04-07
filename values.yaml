@@ -1,0 +1,13 @@
+# Custom values for Prometheus and Grafana services
+prometheus:
+  server:
+    service:
+      type: LoadBalancer
+      annotations:
+        service.beta.kubernetes.io/aws-load-balancer-type: "clb"
+
+grafana:
+  service:
+    type: LoadBalancer
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-type: "clb"
